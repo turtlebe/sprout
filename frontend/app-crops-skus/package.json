@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "@plentyag/app-crops-skus",
+  "version": "0.1.0",
+  "description": "Application for managing farm-def crops and SKUs",
+  "license": "UNLICENSED",
+  "author": "Plenty Inc.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "lint": "eslint --ext .js,.ts,.tsx ./src",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@plentyag/core": "link:../core",
+    "@plentyag/brand-ui": "link:../brand-ui"
+  },
+  "jest": {
+    "resetMocks": false
+  }
+}

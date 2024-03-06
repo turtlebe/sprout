@@ -1,0 +1,8 @@
+export enum Level {
+  IDLE = 'IDLE',
+  PENDING = 'PENDING',
+  PROGRESSING = 'PROGRESSING',
+  FAILED = 'FAILED',
+  SUCCESS = 'SUCCESS',
+  PASSED = 'PASSED',
+}

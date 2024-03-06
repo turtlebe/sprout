@@ -1,0 +1,56 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "@plentyag/monorepo",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "workspaces": [
+    "*"
+  ],
+  "//": [
+    "'engines' - constraints below indicate working env range",
+    "_scriptName - npm scripts that are run by other scripts"
+  ],
+  "engines": {
+    "node": ">=16.13.2",
+    "npm": "please-use-yarn",
+    "yarn": ">=1.19 <=1.22"
+  },
+  "config": {
+    "EXEC": "wsrun --parallel --concurrency 5 --exclude @plentyag/generator-sprout-app --exclude @plentyag/eslint-config --exclude @plentyag/jest-config"
+  },
+  "jest": {
+    "coverageReporters": [
+      "lcov"
+    ]
+  },
+  "scripts": {
+    "lint": "$npm_package_config_EXEC -- eslint --ext .js,.ts,.tsx ./src",
+    "lint:eslint:fix": "$npm_package_config_EXEC -- eslint --fix --ext .js,.ts,.tsx ./src",
+    "lint:prettier:fix": "$npm_package_config_EXEC -- prettier -l --write './src/**/*.{t,j}s{x,}'",
+    "lint:prettier:check": "$npm_package_config_EXEC -- prettier --check './src/**/*.{t,j}s{x,}'",
+    "lint:fix": "yarn lint:eslint:fix && yarn lint:prettier:fix",
+    "clean": "rm -rf */node_modules node_modules",
+    "cleaninstall": "yarn clean && yarn",
+    "dev": "yarn --cwd client dev",
+    "test": "$npm_package_config_EXEC -- test --passWithNoTests --watchAll=false --runInBand --coverage",
+    "create-app": "yo sprout-app"
+  },
+  "devDependencies": {
+    "@plentyag/eslint-config": "link:./eslint-config",
+    "@plentyag/jest-config": "link:./jest-config",
+    "wsrun": "^5.2.0",
+    "yo": "^4.3.0"
+  },
+  "dependencies": {}
+}

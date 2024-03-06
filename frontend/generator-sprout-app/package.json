@@ -1,0 +1,12 @@
+{
+  "name": "@plentyag/generator-sprout-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Yeoman generator for a new Sprout app.",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^5.6.0"
+  }
+}

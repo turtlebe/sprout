@@ -1,0 +1,23 @@
+#!/bin/bash
+
+dry_run=0
+
+while getopts ":d" opt; do
+  case $opt in
+    d)
+      dry_run=1
+      ;;
+  esac
+done
+
+yarn build
+
+if [ $? -ne 0 ]; then { echo "Build failed, aborting." ; exit 1; } fi
+
+cp package.json dist/
+cp README.md dist/
+
+if [ $dry_run -eq 1 ]; then { echo "This command did not publish because it was run in dry run (option -d)." ; exit 0; } fi
+
+cd dist
+npm publish

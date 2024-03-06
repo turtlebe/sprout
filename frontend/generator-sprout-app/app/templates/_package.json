@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "@plentyag/app-<%= appName %>",
+  "version": "0.1.0",
+  "description": "<%= appDesc %>",
+  "license": "UNLICENSED",
+  "author": "Plenty Inc.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "lint": "eslint --ext .js,.ts,.tsx ./src",
+    "test": "react-scripts test"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(use-global-hook)/).+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  },
+  "dependencies": {
+    "@plentyag/core": "link:../core",
+    "@plentyag/brand-ui": "link:../brand-ui"
+  }
+}

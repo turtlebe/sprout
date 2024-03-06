@@ -1,0 +1,66 @@
+import { FarmStateContainer } from '../types/farm-state';
+
+export const mockFarmStateContainer: FarmStateContainer = {
+  harvestedAt: null,
+  initialized: true,
+  loadedAt: null,
+  parentChildIdentifierType: 'LOT_NAME',
+  parentResourceIdentifier: null,
+  positionInParent: null,
+  positionsOfChildren: { currentLoadedResources: {}, numberOfLoadedResources: 0 },
+  resourceState: {
+    childResourceStateIds: [],
+    containerAttributes: {},
+    containerId: null,
+    containerLabels: [],
+    containerObj: {
+      containerType: 'TOWER',
+      createdAt: null,
+      id: 'f720c26d-9f7d-451c-ad0a-0c8a2d667cb2',
+      properties: {},
+      serial: 'P900-0008046A:02IV-BSQG-12',
+      updatedAt: null,
+    },
+    containerStatus: 'IN_USE',
+
+    id: null,
+    isLatest: null,
+    location: {
+      containerLocation: {
+        farmDefPath: 'sites/LAX1/areas/VerticalGrow/lines/GrowRoom1/machines/GrowLine1/containerLocations/A2',
+        farmdefContainerLocationRef: 'ae5a11d5-d959-458c-8af7-3fb98a1d6039:containerLocation-A2',
+        index: 3,
+        traceabilityContainerLocationId: null,
+        traceabilityMachineId: null,
+      },
+      machine: {
+        areaName: 'VerticalGrow',
+
+        farmdefMachineId: 'ae5a11d5-d959-458c-8af7-3fb98a1d6039',
+        lineName: 'GrowRoom1',
+        siteName: 'LAX1',
+        traceabilityMachineId: null,
+      },
+    },
+    materialAttributes: { loadedInGrowAt: '2022-09-05T22:30:00.000Z' },
+    materialId: null,
+    materialLabels: [],
+    materialObj: {
+      createdAt: null,
+      id: null,
+      lotName: 'f9e2dc47-75d7-452d-ab0d-d51d4d2e818f',
+      materialType: 'LOADED_TOWER',
+      product: 'B20',
+      properties: {},
+      updatedAt: null,
+    },
+    materialStatus: 'IN_USE',
+    parentResourceStateId: null,
+    positionInParent: null,
+    quantity: 0.0,
+    units: 'NOT_SPECIFIED',
+    updatedAt: null,
+  },
+  transplantedAt: null,
+  type: 'Tower',
+};

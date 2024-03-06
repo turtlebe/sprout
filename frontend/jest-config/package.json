@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "name": "@plentyag/jest-config",
+  "description": "Plenty.ag Jest Config",
+  "version": "0.0.0",
+  "author": "Plenty Inc.",
+  "main": "index.js"
+}

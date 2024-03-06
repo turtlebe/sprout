@@ -1,0 +1,67 @@
+import {
+  Aggregation,
+  BaseObservationDefinition,
+  Output,
+  WindowDuration,
+} from '@plentyag/core/src/types/derived-observations';
+
+export const mockBaseObservationDefinitions: BaseObservationDefinition[] = [
+  {
+    type: 'BaseObservationDefinition',
+    id: '728343b9-1f77-4e13-b60d-0ef36512c579',
+    streamName: 'SSF2Nutrien3SupplyTankVolumeAvg5Min',
+    observationKey: {
+      path: 'sites/SSF2/areas/VerticalGrow/lines/GrowRoom/machines/Nutrient3',
+      observationName: 'SupplyTankVolume',
+    },
+    window: WindowDuration.fiveMinutes,
+    output: Output.double,
+    createdBy: 'nasi',
+    updatedBy: 'nasi',
+    aggregation: Aggregation.mean,
+    comment: 'comment',
+    createdAt: '2022-03-04T20:38:59.954043Z',
+    updatedAt: '2022-03-04T20:38:59.954043Z',
+    dependents: [
+      {
+        type: 'DerivedObservationDefinition',
+        id: '8029a796-a0c4-4206-ae9a-5c47764dcb51',
+        streamName: 'SSF2Nutrien3SupplyTankVolumeDerived',
+        observationKey: {
+          path: 'sites/SSF2/areas/VerticalGrow/lines/GrowRoom/machines/Nutrient3',
+          observationName: 'SupplyTankVolume',
+        },
+        window: WindowDuration.fiveMinutes,
+        output: Output.double,
+        createdBy: 'nasi',
+        updatedBy: 'nasi',
+        sourceStreamNames: ['SSF2Nutrien3SupplyTankVolumeAvg5Min'],
+        expression: 'SSF2Nutrien3SupplyTankVolumeAvg5Min',
+        outputMeasurementType: 'PRESSURE',
+        outputMeasurementTypeUnits: 'PSI',
+        dependents: [],
+        dependencies: [],
+        createdAt: '2022-03-04T20:38:59.954043Z',
+        updatedAt: '2022-03-04T20:38:59.954043Z',
+      },
+    ],
+  },
+  {
+    type: 'BaseObservationDefinition',
+    id: '94a125cf-2de6-42c1-9372-8cc10c6ed85f',
+    createdAt: '2022-02-28T15:57:34.470574Z',
+    updatedAt: '2022-02-28T15:57:34.470576Z',
+    createdBy: 'nasi',
+    updatedBy: 'nasi',
+    streamName: 'LAR1NorthBuildingGP16SupplyOutletPressureAvg5Min',
+    observationKey: {
+      path: 'sites/LAR1/areas/NorthBuilding/lines/GP16',
+      observationName: 'SupplyOutletPressure',
+    },
+    window: WindowDuration.fiveMinutes,
+    output: Output.double,
+    aggregation: Aggregation.mean,
+    comment: '',
+    dependents: [],
+  },
+];

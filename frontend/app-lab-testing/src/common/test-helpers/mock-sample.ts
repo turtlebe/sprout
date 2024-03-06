@@ -1,0 +1,38 @@
+import { DumpRefillStatus, HealthStatus } from '../types/interface-types';
+
+export const mockSample: LT.CreateItem = {
+  username: 'lneir',
+  id: 'FFFC-29E0-5709',
+  sampleDate: new Date('2020-02-27T08:00:00.000Z'),
+  sampleTime: null,
+  labTestKind: 'Human Pathogen',
+  labTestProvider: 'Anresco',
+  sampleType: 'Product',
+  location: { path: '/sites/SSF1/', id: 'f4cacc45-6fcb-4b6f-8db8-2260af6d591f' },
+  subLocation: 'Sub Location Updated by User',
+  labelDetails: 'LabDetails Updated by User',
+  productCodes: [
+    { name: 'C10', displayName: '' },
+    { name: 'B11', displayName: '' },
+  ],
+  notes: 'Notes Updated by User',
+  lotCodes: ['Lot6'],
+  trialIds: '1,2,3',
+  treatmentIds: '1,2,3',
+  harvestCycle: '100',
+  healthStatus: HealthStatus.Empty,
+  materialLot: '',
+  containerId: '',
+  tests: [
+    { name: 'Coliforms', selected: true },
+    { name: 'E. coli', selected: true },
+    { name: 'E. coli STEC/EAE', selected: true },
+    { name: 'Listeria', selected: true },
+    { name: 'Mold', selected: true },
+    { name: 'Salmonella', selected: true },
+    { name: 'Yeast', selected: true },
+  ],
+  nutrientStage: '',
+  dumpRefillStatus: DumpRefillStatus.Empty,
+  providerSampleId: '',
+};

@@ -1,0 +1,121 @@
+import { makeStyles } from '@plentyag/brand-ui/src/material-ui/core';
+import { IDropzoneProps } from 'react-dropzone-uploader';
+
+export const styles: IDropzoneProps['styles'] = {
+  dropzoneReject: { borderColor: 'red', backgroundColor: '#DAA' },
+  inputLabel: (files, extra) => (extra.reject ? { color: 'red' } : {}),
+};
+
+export const useStyles = makeStyles(() => ({
+  '@global': {
+    '.dzu-dropzone': {
+      display: 'flex',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      alignItems: 'center',
+      width: '100%',
+      minHeight: 120,
+      overflow: 'auto',
+      position: 'relative',
+      boxSizing: 'border-box',
+      transition: 'all .15s linear',
+      border: '2px solid #d9d9d9',
+      borderRadius: 4,
+    },
+    '.dzu-dropzoneActive': {
+      backgroundColor: '#DEEBFF',
+      borderColor: '#2484FF',
+    },
+    '.dzu-dropzoneDisabled': {
+      opacity: 0.5,
+    },
+    '.dzu-dropzoneDisabled *:hover': {
+      cursor: 'unset',
+    },
+    '.dzu-input': {
+      display: 'none',
+    },
+    '.dzu-inputLabel': {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      position: 'absolute',
+      textAlign: 'center',
+      whiteSpace: 'pre-line',
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+      fontFamily: 'inherit',
+      fontSize: 20,
+      fontWeight: 400,
+      color: '#2484FF',
+      MozOsxFontSmoothing: 'grayscale',
+      WebkitFontSmoothing: 'antialiased',
+      cursor: 'pointer',
+    },
+    '.dzu-inputLabelWithFiles': {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      alignSelf: 'center',
+      padding: '0 14px',
+      minHeight: 32,
+      backgroundColor: '#E6E6E6',
+      color: '#2484FF',
+      border: 'none',
+      fontFamily: 'inherit',
+      borderRadius: 4,
+      fontSize: 14,
+      fontWeight: 600,
+      marginRight: '1rem',
+      MozOsxFontSmoothing: 'grayscale',
+      WebkitFontSmoothing: 'antialiased',
+      cursor: 'pointer',
+    },
+    '.dzu-previewContainer': {
+      padding: '40px 3%',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      position: 'relative',
+      minHeight: 60,
+      zIndex: 1,
+      borderBottom: '1px solid #ECECEC',
+      boxSizing: 'border-box',
+    },
+    '.dzu-previewStatusContainer': {
+      display: 'flex',
+      alignItems: 'center',
+    },
+    '.dzu-previewFileName': {
+      fontFamily: 'inherit',
+      fontSize: 14,
+      fontWeight: 400,
+      color: '#333333',
+    },
+    '.dzu-previewImage': {
+      width: 'auto',
+      maxHeight: 40,
+      maxWidth: 140,
+      borderRadius: 4,
+    },
+    '.dzu-previewButton': {
+      backgroundSize: '14px 14px',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      width: 14,
+      height: 14,
+      cursor: 'pointer',
+      opacity: 0.9,
+      margin: '0 0 2px 10px',
+    },
+    '.dzu-submitButtonContainer': {
+      margin: '24px 0 0',
+    },
+    '.dzu-submitButton': {
+      display: 'none',
+    },
+  },
+}));

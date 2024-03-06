@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="18px" viewBox="0 0 5 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Tower</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Plant-geneology-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons_Plant-geneology" transform="translate(-1027.000000, -503.000000)">
+            <g id="Tower" transform="translate(1017.000000, 500.000000)">
+                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                <g id="Group-58" transform="translate(10.000000, 3.000000)" fill="#000000">
+                    <path d="M4,4 L1,4 C0.45,4 0,4.45 0,5 L0,17 C0,17.55 0.45,18 1,18 L4,18 C4.55,18 5,17.55 5,17 L5,5 C5,4.45 4.55,4 4,4 L4,4 Z" id="Shape"></path>
+                    <path d="M1,0 C0.45,0 0,0.0642857143 0,0.142857143 L0,1.85714286 C0,1.93571429 0.45,2 1,2 L4,2 C4.55,2 5,1.93571429 5,1.85714286 L5,0.142857143 C5,0.0642857143 4.55,0 4,0 L1,0 Z" id="Shape-Copy-21"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "@plentyag/app-quality",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "author": "Plenty Inc.",
+  "main": "src/index.tsx",
+  "module": "src/index.tsx",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.tsx ./src",
+    "test": "react-scripts test"
+  },
+  "devDependencies": {
+    "csv-parse": "^5.3.10"
+  },
+  "dependencies": {
+    "@plentyag/brand-ui": "link:../brand-ui",
+    "@plentyag/core": "link:../core"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(use-global-hook)/).+\\.(js|jsx|ts|tsx)$"
+    ],
+    "resetMocks": false
+  }
+}

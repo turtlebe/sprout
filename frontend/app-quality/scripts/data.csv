@@ -1,0 +1,13 @@
+Crop,Sku name,Damage min - PASS,Damage max - PASS,Damage min - FAIL,Damage max - FAIL,Serious Damage min - PASS,Serious Damage max - PASS,Serious Damage min - FAIL,Serious Damage max - FAIL,Extreme Damage min - PASS,Extreme Damage max - PASS,Extreme Damage min - FAIL,Extreme Damage max - FAIL
+SAS,SASCase6Clamshell9ozMarketside8.0oz,0,43,44,300,0,28,29,300,0,5,6,300
+SAS,SASCase6Clamshell9ozPlenty9.0oz,0,43,44,300,0,28,29,300,0,5,6,300
+SAS,SASCase6Clamshell4o5ozMarketside4.0oz,0,32,33,225,0,21,22,225,0,4,5,225
+SAS,SASCase6Clamshell4o5ozPlenty4.5oz,0,32,33,225,0,21,22,225,0,4,5,225
+CRC,CRCCase6Clamshell9ozMarketside8.0oz,0,63,64,430,0,41,42,430,0,7,8,430
+CRC,CRCCase6Clamshell9ozPlenty9.0oz,0,63,64,430,0,41,42,430,0,7,8,430
+CRC,CRCCase6Clamshell4o5ozMarketside4.0oz,0,27,28,190,0,17,18,190,0,2,3,190
+CRC,CRCCase6Clamshell4o5ozPlenty4.5oz,0,27,28,190,0,17,18,190,0,2,3,190
+BAC,BACCase6Clamshell4o5ozMarketside4.0oz,0,40,41,280,0,26,27,280,0,4,5,280
+BAC,BACCase6Clamshell4o5ozPlenty4.5oz,0,40,41,280,0,26,27,280,0,4,5,280
+WHC,WHCCase6Clamshell4o5ozMarketside4.0oz,0,22,23,160,0,14,15,160,0,2,3,160
+WHC,WHCCase6Clamshell4o5ozPlenty4.5oz,0,22,23,160,0,14,15,160,0,2,3,160

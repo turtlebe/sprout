@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "@plentyag/app-environment",
+  "version": "0.0.1",
+  "description": "Environment V2 App",
+  "license": "UNLICENSED",
+  "author": "Plenty Inc.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "lint": "eslint --ext .js,.ts,.tsx ./src",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@plentyag/brand-ui": "link:../brand-ui",
+    "@plentyag/core": "link:../core",
+    "@types/mathjs": "^9.4.2",
+    "@types/numeral": "^2.0.2",
+    "mathjs": "^10.1.1",
+    "numeral": "^2.0.6"
+  },
+  "jest": {
+    "resetMocks": false
+  }
+}

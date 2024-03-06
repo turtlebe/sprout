@@ -1,0 +1,16 @@
+export const initialState: IL.LabelingState = {
+  labelingInstructions: null,
+  currentLabelSets: [],
+  modifiedLabelSetIds: [],
+  activeLabelSet: null,
+  activeLabels: [],
+  activeLabelingTool: null,
+  labelColor: 'rgba(0, 0, 0, 1)',
+  labelBeingAdded: null,
+  selectedLabel: null,
+  currentTransformer: null,
+  scaleFactor: null,
+  finishedScaling: false,
+  canvasWidth: 1000,
+  canvasHeight: 600,
+};

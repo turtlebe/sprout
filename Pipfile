@@ -1,0 +1,79 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.8.10"
+
+[packages]
+# Flask
+Flask = "==2.1.0"
+click = "==8.1.1"
+werkzeug = "==2.1.0"
+numpy = "==1.23.1"
+# Forms
+Flask-WTF = "==1.0.0"
+WTForms = "==2.2.1"
+flask-bootstrap = "==3.3.7"
+# Google Auth
+google-auth = ">=1.6.3"
+# Static Assets
+flask-assets = "==0.12"
+libsass = "==0.19.4"
+cssmin = "==0.2.0"
+jsmin = "==3.0.0"
+# Deployment
+gevent = "==21.12.0"
+gunicorn = ">=19.1.1"
+supervisor = "==4.1.0"
+# see: https://github.com/benoitc/gunicorn/issues/2428
+greenlet = "==1.1.2"
+# Auth
+Flask-Login = "==0.6.0"
+# Caching
+Flask-Caching = ">=1.0.0"
+python-memcached = "==1.59"
+fakeredis = ">=1.0.0"
+# Debug toolbar
+Flask-DebugToolbar = "==0.13.1"
+# Environment variable parsing
+environs = "==4.2.0"
+# Datadog
+ddtrace = "==0.60.1"
+# AWS
+boto3 = "==1.21.22"
+# Background Job Management
+rq = "==1.10.1"
+rq-scheduler = ">=0.8.0"
+# Read Excel
+openpyxl = "==3.0.10"
+pandas = "==1.5.3"
+
+plentyservice = {editable = true, git = "ssh://git@github.com/PlentyAg/plenty-utils-python.git", ref = "1.32.3"}
+nutrient-dosing = {editable = true, git = "ssh://git@github.com/PlentyAg/plenty-scripts.git", ref = "1.1.3",subdirectory = "installable/nutrient_dosing"}
+environment-service-client = {editable = true, git = "ssh://git@github.com/PlentyAg/environment-service.git", ref = "0.0.302", subdirectory = "python/environment_service_client"}
+observation-digest-service-client = {editable = true, git = "ssh://git@github.com/PlentyAg/observation-digest-service.git", ref = "0.0.114", subdirectory = "python/observation_digest_service_client"}
+device-management-service-client = {editable = true, git = "ssh://git@github.com/PlentyAg/DeviceManagementService.git", ref = "0.7.128", subdirectory = "python/device_management_service_client"}
+farm-def-service-client = {editable = true, git = "ssh://git@github.com/PlentyAg/farm-def-service.git", ref = "0.35.255", subdirectory = "python/farm_def_service_client"}
+productqualityservice-client = {editable = true, git = "ssh://git@github.com/PlentyAg/ProductQualityService.git", ref = "1.6.131", subdirectory = "python/productqualityservice_client"}
+ignition-ingest-service-client = {editable = true, git = "ssh://git@github.com/PlentyAg/ignition-ingest-service.git", ref = "0.0.47", subdirectory = "python/ignition_ingest_service_client"}
+comments-service-client = {editable = true, git = "ssh://git@github.com/PlentyAg/comments-service.git", ref = "0.0.15", subdirectory = "python/comments_service_client"}
+inflection = "==0.5.0"
+pyhumps = "==3.0.2"
+
+[dev-packages]
+# Procfile runner
+# Testing
+pytest = "==4.6.3"
+factory-boy = "==2.12.*"
+pytest-cov = "==2.7.1"
+coverage-badge = "==1.0.1"
+pytest-mock = "==1.10.4"
+# Monitor RQ
+rq-dashboard = "==0.5.1"
+# Lint and code style
+yapf = ">=0.27.0"
+isort = "==4.3.21"
+mypy = "*"
+black = "==22.3.0"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_arrow_forward_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Plant-geneology-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons_Plant-geneology" transform="translate(-613.000000, -671.000000)">
+            <g id="ic_arrow_forward_24px" transform="translate(609.000000, 667.000000)">
+                <g id="Group">
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    <polygon id="Shape" fill="#000000" points="12 4 10.59 5.41 16.17 11 4 11 4 13 16.17 13 10.59 18.59 12 20 20 12"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

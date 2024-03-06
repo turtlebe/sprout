@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Environmental information</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Plant-geneology-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons_Plant-geneology" transform="translate(-503.000000, -670.000000)" fill="#000000">
+            <path d="M519,670 L505,670 C503.9,670 503,670.9 503,672 L503,686 C503,687.1 503.9,688 505,688 L519,688 C520.1,688 521,687.1 521,686 L521,672 C521,670.9 520.1,670 519,670 L519,670 Z M509,684 L507,684 L507,677 L509,677 L509,684 L509,684 Z M513,684 L511,684 L511,674 L513,674 L513,684 L513,684 Z M517,684 L515,684 L515,680 L517,680 L517,684 L517,684 Z" id="Environmental-information"></path>
+        </g>
+    </g>
+</svg>

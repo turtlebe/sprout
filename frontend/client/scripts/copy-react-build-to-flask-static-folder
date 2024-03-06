@@ -1,0 +1,40 @@
+# #!/bin/bash
+
+FLASK_STATIC_FOLDER=../../server/sprout/static
+FLASK_TEMPLATE_FOLDER=../../server/sprout/templates
+BACKUP_FLASK_STATIC_FOLDER=../../server/sprout/static.backup
+
+# Create folder if they don't already exist (when building the docker image)
+mkdir -p $FLASK_STATIC_FOLDER
+mkdir -p $FLASK_TEMPLATE_FOLDER
+
+# Backup static folder
+mv $FLASK_STATIC_FOLDER $BACKUP_FLASK_STATIC_FOLDER
+
+# /!\ The two following commands are separated intentionally.
+# We need to flatten all React assets in one level.
+
+# Rename React static folder to be Flask static folder
+mv build/static $FLASK_STATIC_FOLDER
+rm -rf build/static
+
+# Copy remaining React files into Flask static folder.
+mv build/* $FLASK_STATIC_FOLDER
+rm -rf build
+
+# Copy images+favicon from backup into Flask static folder
+if [ -f $BACKUP_FLASK_STATIC_FOLDER/img ]; then
+  mv $BACKUP_FLASK_STATIC_FOLDER/img $FLASK_STATIC_FOLDER
+fi
+if [ -f $BACKUP_FLASK_STATIC_FOLDER/favicon.ico ]; then
+  mv $BACKUP_FLASK_STATIC_FOLDER/favicon.ico $FLASK_STATIC_FOLDER
+fi
+if [ -d $BACKUP_FLASK_STATIC_FOLDER/content ]; then
+  mv $BACKUP_FLASK_STATIC_FOLDER/content $FLASK_STATIC_FOLDER
+fi
+
+# move index.html to templates folder - since served as a template.
+mv $FLASK_STATIC_FOLDER/index.html $FLASK_TEMPLATE_FOLDER/index.html
+
+# Remove backup static folder
+rm -rf $BACKUP_FLASK_STATIC_FOLDER

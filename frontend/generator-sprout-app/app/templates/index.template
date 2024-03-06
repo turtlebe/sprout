@@ -1,0 +1,8 @@
+import React from 'react';
+
+export const <%= appTitle %>: React.FC = () => {
+  document.title = '<%= appTitle %>';
+  return (
+    <div>Hello World: <%= appTitle %></div>
+  )
+};

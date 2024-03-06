@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Cohort of towers</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Plant-geneology-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons_Plant-geneology" transform="translate(-1127.000000, -503.000000)">
+            <g id="Cohort-of-towers" transform="translate(1125.000000, 500.000000)">
+                <g id="Group-17" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) ">
+                    <g id="ic_view_stream_24px-copy">
+                        <g id="Group">
+                            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                            <polygon id="Shape" fill="#000000" opacity="0" points="4 15 21 15 21 9 4 9"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group">
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    <g id="Group-58" transform="translate(2.000000, 3.000000)" fill="#000000">
+                        <path d="M4,4 L1,4 C0.45,4 0,4.45 0,5 L0,17 C0,17.55 0.45,18 1,18 L4,18 C4.55,18 5,17.55 5,17 L5,5 C5,4.45 4.55,4 4,4 L4,4 Z M18,4 L15,4 C14.45,4 14,4.45 14,5 L14,17 C14,17.55 14.45,18 15,18 L18,18 C18.55,18 19,17.55 19,17 L19,5 C19,4.45 18.55,4 18,4 L18,4 Z M11,4 L8,4 C7.45,4 7,4.45 7,5 L7,17 C7,17.55 7.45,18 8,18 L11,18 C11.55,18 12,17.55 12,17 L12,5 C12,4.45 11.55,4 11,4 L11,4 Z" id="Shape"></path>
+                        <path d="M3.8,0 C1.71,0 0,0.0642857143 0,0.142857143 L0,1.85714286 C0,1.93571429 1.71,2 3.8,2 L15.2,2 C17.29,2 19,1.93571429 19,1.85714286 L19,0.142857143 C19,0.0642857143 17.29,0 15.2,0 L3.8,0 Z" id="Shape-Copy-21"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

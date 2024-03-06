@@ -1,0 +1,98 @@
+export const searchResult = [
+  {
+    description: 'Request to wash the tote',
+    name: 'Tote Washed',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ToteProcessing/machines/ToteWasher/interfaces/ToteWasher/methods/ToteWashed',
+    type: 'tell',
+  },
+  {
+    description: 'Convey the type of crop',
+    name: 'Tote Filling Crop Change',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ToteProcessing/interfaces/ToteProcessing/methods/ToteFillingCropChange',
+    type: 'tell',
+  },
+  {
+    description: 'Set changeover mode for crop',
+    name: 'Tote Processing Entered Crop Changeover',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ToteProcessing/interfaces/ToteProcessing/methods/ToteProcessingEnteredCropChangeover',
+    type: 'tell',
+  },
+  {
+    description: 'changeover mode for crop completed',
+    name: 'Tote Processing Finished Crop Changeover',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ToteProcessing/interfaces/ToteProcessing/methods/ToteProcessingFinishedCropChangeover',
+    type: 'tell',
+  },
+  {
+    description: 'Box was filled',
+    name: 'Box Filled',
+    path: 'sites/SSF2/areas/SecondaryPostHarvest/lines/CasePacking/machines/BoxBuilder/interfaces/BoxBuilder/methods/BoxFilled',
+    type: 'tell',
+  },
+  {
+    description: 'Packing mode has been updated',
+    name: 'Packaging Mode Updated',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ProductPacking/interfaces/ProductPacking/methods/PackagingModeUpdated',
+    type: 'tell',
+  },
+  {
+    description: 'Crop blend prescription updated',
+    name: 'Blending Prescription Updated',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ProductPacking/interfaces/ProductPacking/methods/BlendingPrescriptionUpdated',
+    type: 'tell',
+  },
+  {
+    description: 'Set changeover mode for crop',
+    name: 'Product Packing Entered Crop Changeover',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ProductPacking/interfaces/ProductPacking/methods/ProductPackingEnteredCropChangeover',
+    type: 'tell',
+  },
+  {
+    description: 'changeover mode for crop completed',
+    name: 'Product Packing Finished Crop Changeover',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ProductPacking/interfaces/ProductPacking/methods/ProductPackingFinishedCropChangeover',
+    type: 'tell',
+  },
+  {
+    description: 'The tote is filled',
+    name: 'Tote Filled',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ToteProcessing/machines/ToteFiller/interfaces/ToteFiller/methods/ToteFilled',
+    type: 'tell',
+  },
+  {
+    description: 'The tote has arrived at filling',
+    name: 'Tote Arrived At Tote Filling',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ToteProcessing/machines/ToteFiller/interfaces/ToteFiller/methods/ToteArrivedAtToteFilling',
+    type: 'tell',
+  },
+  {
+    description: 'Notifies that the tote is dumped',
+    name: 'Tote Dumped',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ProductPacking/machines/Blender/interfaces/Blender/methods/ToteDumped',
+    type: 'tell',
+  },
+  {
+    description: 'Notifies arrival of tote',
+    name: 'Tote Arrived At Blending',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ProductPacking/machines/Blender/interfaces/Blender/methods/ToteArrivedAtBlending',
+    type: 'tell',
+  },
+  {
+    description: 'Packages were filled',
+    name: 'Packages Filled',
+    path: 'sites/SSF2/areas/PrimaryPostHarvest/lines/ProductPacking/machines/PackagingLine/interfaces/PackagingLine/methods/PackagesFilled',
+    type: 'tell',
+  },
+  {
+    description: 'Register the yield and loss information for the crop',
+    name: 'Yield Loss Registered',
+    path: 'sites/SSF2/areas/CentralProcessing/lines/PostHarvestConditioning/interfaces/PostHarvestConditioning/methods/YieldLossRegistered',
+    type: 'tell',
+  },
+  {
+    description: 'Request to update PTI label',
+    name: 'Update Clarisuite Instant Pti Label',
+    path: 'sites/SSF2/areas/SecondaryPostHarvest/lines/CasePacking/machines/BoxLabeler/interfaces/BoxLabeler/methods/UpdateClarisuiteInstantPtiLabel',
+    type: 'tell',
+  },
+];

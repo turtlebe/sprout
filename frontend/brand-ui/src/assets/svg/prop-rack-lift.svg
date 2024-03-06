@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43" height="72" viewBox="0 0 43 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <title>Propagation rack lift</title>
+    <desc>exported from figma.</desc>
+    <defs></defs>
+  <path d="M20.7551 11.7462L2.44221 23.5187H2.28882e-05L15.5477 11.3979L20.7551 11.7462Z" fill="#CECECE"/>
+  <path d="M24.6439 55.4761L2.44225 71.9998H5.53131e-05L18.9093 55.4761H24.6439Z" fill="#CECECE"/>
+  <path d="M19.1099 55.4759H24.6439L24.3386 3.28809H18.8064L19.1099 55.4759Z" fill="#E2E2E2"/>
+  <path d="M56.0001 9.26469L24.4805 36.601H19.1098L45.4824 9.26469H56.0001Z" fill="#CECECE"/>
+  <path d="M45.0001 10.0059L18.6276 37.3422V28.9495L45.0001 0V10.0059Z" fill="#F5F5F5"/>
+  <path d="M8.01086e-05 72L15.5868 53.078L15.5478 11.3978L8.01086e-05 23.5186L18.8064 3.2884L19.1099 55.4762L8.01086e-05 72Z" fill="#F5F5F5"/>
+</svg>

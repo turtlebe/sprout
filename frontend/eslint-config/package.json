@@ -1,0 +1,65 @@
+{
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "name": "@plentyag/eslint-config",
+  "description": "Plenty.ag TypeScript-ESLint Styleguide - ESLint Shareable Config",
+  "version": "0.0.0",
+  "author": "Plenty Inc.",
+  "license": "UNLICENSED",
+  "keywords": [
+    "Plenty.ag JavaScript Styleguide",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "eslint",
+    "eslintconfig",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "style",
+    "style checker",
+    "style linter",
+    "verify"
+  ],
+  "files": [
+    "index.js",
+    "tsconfig.json"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn lint",
+    "lint": "eslint --ext .js,.ts,.tsx ./src",
+    "lint-rule-timings": "TIMING=1 yarn lint"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/lodash": "^4.14.172",
+    "@types/node": "^16.6.1",
+    "@types/react": "^17.0.2",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/react-text-mask": "^5.4.6",
+    "@types/webpack": "^4.41.2",
+    "@types/webpack-env": "^1.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-import-path": "^0.0.2",
+    "prettier": "^2.6.2",
+    "typescript": "~4.3.5"
+  }
+}

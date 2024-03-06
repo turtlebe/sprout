@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "name": "@plentyag/sprout",
+  "version": "0.0.0",
+  "description": "Better than an afternoon at Blips and Chitz",
+  "scripts": {
+    "start": "craco start",
+    "build": "craco --max_old_space_size=4096 build",
+    "postbuild": "./scripts/copy-react-build-to-flask-static-folder",
+    "lint": "eslint --ext .js,.ts,.tsx ./src",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "flask-server": "cd ../../ && pipenv run flask run",
+    "dev": "yarn concurrently -n \"WEBPACK,FLASK\" -c \"bgBlue.bold,bgMagenta.bold\" \"PORT=3000 yarn start\" \"yarn flask-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:PlentyAg/Sprout.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Plenty Inc.",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@datadog/browser-rum": "^4.2.0",
+    "@plentyag/app-api-docs": "link:../app-api-docs",
+    "@plentyag/app-crops-skus": "link:../app-crops-skus",
+    "@plentyag/app-data-docs": "link:../app-data-docs",
+    "@plentyag/app-derived-observations": "link:../app-derived-observations",
+    "@plentyag/app-devices": "link:../app-devices",
+    "@plentyag/app-environment": "link:../app-environment",
+    "@plentyag/app-ignition-tag-registry": "link:../app-ignition-tag-registry",
+    "@plentyag/app-help": "link:../app-help",
+    "@plentyag/app-lab-testing": "link:../app-lab-testing",
+    "@plentyag/app-perception": "link:../app-perception",
+    "@plentyag/app-quality": "link:../app-quality",
+    "@plentyag/app-utilities": "link:../app-utilities",
+    "@plentyag/brand-ui": "link:../brand-ui",
+    "@plentyag/core": "link:../core",
+    "@plentyag/farmos-navbar": "link:../farmos-navbar",
+    "@plentyag/app-production": "link:../app-production",
+    "@plentyag/app-production-admin": "link:../app-production-admin",
+    "react-ga": "^2.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "circular-dependency-plugin": "^5.2.2"
+  }
+}

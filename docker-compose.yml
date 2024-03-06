@@ -1,0 +1,57 @@
+version: '3.6'
+
+x-build-args: &build_args
+  INSTALL_NODE_VERSION: 16.13.2
+  INSTALL_YARN_VERSION: 1.22.4
+
+services:
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        <<: *build_args
+    image: sprout
+    env_file: .env
+    # Declaring these variables allows the host to pass down these variables
+    # when not defined in .env since they might be defined more globally accross projects
+    environment:
+      - PLENTY_API_KEY
+      - PLENTY_API_SECRET
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+    command: pipenv run flask run --host=0.0.0.0
+    ports:
+      - 8000:8000
+    depends_on:
+      - redis
+
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        <<: *build_args
+    image: sprout
+    env_file: .env
+    command: yarn --cwd frontend/client start --host 0.0.0.0
+    tty: true
+    environment:
+      SPROUT_HOSTNAME: flask
+      HYPOCOTYL_HOSTNAME: flask
+    ports:
+      - 3000:3000
+    depends_on:
+      - flask
+
+  redis:
+    image: redis:5.0-alpine
+    restart: always
+    expose:
+      - 6379
+    ports:
+      - 6379:6379
+
+volumes:
+  dev-db:
+  node_modules:

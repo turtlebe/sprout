@@ -1,0 +1,38 @@
+import { CalibrationHistory } from '../types';
+
+export const calibrationHistory: CalibrationHistory[] = [
+  {
+    deviceId: 'a2836c7b-ea6d-4d16-9a34-7eb07f535c25',
+    devicePartNumber: 'SHT31',
+    type: 'TEMPERATURE',
+    validFrom: '2022-03-18T14:58:33Z',
+    validTo: '2022-09-18T14:58:33Z',
+    preCalibrationError: 5.1,
+    preCalibrationErrorUnits: 50,
+    preCalibrationValue: 250,
+    preCalibrationRefValue: 300,
+    postCalibrationError: 1.0,
+    postCalibrationErrorUnits: 10,
+    postCalibrationValue: 290,
+    postCalibrationRefValue: 300,
+    calibrationFormula: '5*<value> + 10',
+    calibrationOffset: 0,
+  },
+  {
+    deviceId: 'a2836c7b-ea6d-4d16-9a34-7eb07f535c25',
+    devicePartNumber: 'SHT31',
+    type: 'RELATIVE_HUMIDITY',
+    validFrom: '2021-03-18T14:58:33Z',
+    validTo: '2022-03-18T14:58:33Z',
+    preCalibrationError: 5.1,
+    preCalibrationErrorUnits: 50,
+    preCalibrationValue: 250,
+    preCalibrationRefValue: 300,
+    postCalibrationError: 1.0,
+    postCalibrationErrorUnits: 10,
+    postCalibrationValue: 290,
+    postCalibrationRefValue: 300,
+    calibrationFormula: '4*<value> + 10',
+    calibrationOffset: 0,
+  },
+];
